@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
     font-family: "Poppins", sans-serif;
 }
 .hero-image{
@@ -179,7 +180,6 @@
 }
 .header-nav{
     float: right;
-    list-style: none;
     margin: 8px 2% 0px 0px;
 }
 .header-nav li{
