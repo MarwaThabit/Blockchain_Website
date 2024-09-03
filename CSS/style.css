@@ -62,6 +62,14 @@
     text-align: center;
 }
 
+/**                             === Positions & Floating===                 **/
+
+.header-links,.header-first-link,.news-title,.home-container,.footer-container,.team-img-content{
+    position: relative;
+}
+.header-logo,.offer div,.offer i,.reasons,.selection-img,.Advantage{
+    float: left;
+}
 /**  === Selectors That Have Same Base Style && Transition Effect ===  */
 
 .team-parent,.news-parent{
@@ -89,6 +97,12 @@
     left: 0;
     transition: 1s;
 }
+.footer-links a,.team-member p,.team-member h3,.home-btn a{
+    transition: 0.5s;
+}
+.header-links::after,.feature-box h3,.offer h3,.price-plan h3,.period{
+    transition: 1s;
+}
 
 /**  === Selectors That Have Same Hover Effect && Visibility && Display === */
 
@@ -112,7 +126,7 @@
     margin: auto;
 }
 
-/** === Selectors That Have Same Background Color ===  */
+/** === Selectors That Have Same Background Color & Same Color ===  */
 
 .post-info-newLayer, .home-overlay, .team-overlay-img ,.achievements-overlay , .Advantage-overlay {
     background-color: rgba(0, 0, 0, 0.6);
@@ -120,9 +134,9 @@
 .future-posts-container , .news-container {
     background-color: #f3f3f3;
 }
-
-/**  === Selectors That Have Same Color ===  */
-
+.welcome-title hr,.post-info-newLayer .icon,.selection-title hr,.price-plan button,.Advantage img{
+    background-color: #2476a5;
+}
 .feature-box p, .offer p {
     color: #393333;
 }
@@ -157,12 +171,37 @@
 .footer-parent p,.offer p,.reasons-other-p,.Advantage p{
     font-size: 22px;
 }
+.feature-box p,.post-info-newLayer .icon i,.advantage-content span,.news-card p{
+    font-size: 20px;
+}
 .feature-box h3,.post-info-content p,.achievement-number{
     font-size: 35px;
 }
+.member-links a i,.footer-links a i{
+    line-height: 50px;
+}
+.member-links a,.footer-links a{
+    height: 50px;
+    width: 50px; 
+    background-color: #1934a2;
+}
+.header,.header-first-link::after,.header-links:hover::after,.selection-img img,.team-img-content img{
+    width: 100%;
+}
+.reasons i,.slid_bar i{
+    margin-right: 5px;
+}
+.news-card p,.feature-box h3,.feature-box p,.post{
+    margin-bottom: 20px;
+}
+.future-posts-container,.offers-container,.achievements-parent,.price-container,.team-container,.selection-container{
+    padding: 125px 0 90px;
+}
+.price-container,.team-member,.selection-container{
+    background-color: #f9f9f9;
+}
 /* !==============================================HEADER_SECTION_STYLE================================================================= */
 .header{
-    width: 100%;
     height: 80px;
     background: rgb(0 ,0 ,0, 0.3);
     padding-top: 10px;
@@ -171,7 +210,6 @@
     z-index: 1000;
 }   
 .header-logo{
-    float: left;
     margin-left: 10px;
 }
 .header-logo a img{
@@ -188,9 +226,6 @@
 .header-nav li{
     margin-right: 25px;
 }
-.header-links,.header-first-link,.news-title{
-    position: relative;
-}
 .header-first-link::after,.header-links::after{
     position: absolute;
     content: '';
@@ -199,12 +234,8 @@
     left: 0;
     background-color: #d9e4f0;
 }
-.header-first-link::after,.header-links:hover::after{
-    width: 100%;
-}
 .header-links::after{
     width: 0;
-    transition: 1s;
 }
 .news-page div{
     background-color: #1c4695;
@@ -220,7 +251,6 @@
 .home-container{
     background-image: url(../Images/img17.jpeg);
     height: 100vh;
-    position: relative;
 }
 .home-parent{
     width: 85%;
@@ -232,9 +262,8 @@
     margin: 19px 0px 65px;
 }
 .home-btn a{
-    padding: 19px 20px;
+    padding: 20px;
     border-radius: 10px;
-    transition: 0.4s;
 }
 .home-primary-btn{
     background-color: #1c4695;
@@ -248,7 +277,7 @@
 }
 .home-secondary-btn:hover{
     background-color:  #1c469568;
-    border-color: #1c469596;
+    border-color: #1c469568;
 }
 /* !==============================================WELCOME_SECTION_STYLE================================================================= */
 .welcome-container{
@@ -257,31 +286,18 @@
 .welcome-title hr{
     width: 15%;
     height: 4px;
-    background-color: #2476a5;
     border: 0;
     margin:10px  auto 100px;
 }
 .feature-box{
     padding: 30px 23px;
 }
-.feature-box h3{
-    margin-bottom:  20px;
-    transition: 1s;
-}
-.feature-box p{
-    margin-bottom: 20px;
-    font-size: 20px;
-}
 .feature-box a{
     color: #0c4566;
 }
 /* !==============================================POSTS_SECTION_STYLE================================================================= */
-.future-posts-container{
-    padding: 120px 0 60px;
-}
 .post{
     padding: 30px 0px;
-    margin-bottom: 20px;
 }
 .post img{
     height: 365px;
@@ -302,55 +318,35 @@
     height: 40px;
     border-radius: 5px;
     margin:20px  7px 0px 0px;
-    background-color: #2476a5;
 }
 .post-info-newLayer .icon i{
     line-height: 40px;
-    font-size: 19px;
 }
-.post-info-newLayer{
-    top: 0;
-    left: 0;
-    visibility: hidden;
-}
-.post:hover .post-info-newLayer{
-    visibility: visible;
-}
+
 /* !==============================================OFFERS_SECTION_STYLE================================================================= */
-.offers-container{
-    padding: 110px 0 55px;
-}
 .offer{
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     padding: 35px 15px 35px  ;
 }
 .offer h3{
-    transition: 1s;
     margin-bottom: 15px;
+    font-size: 30px;
 }
 .offer div{
-    float: left;
     width: 80%;
 }
 .offer i{
-    margin-right: 10px;
-    float: left;
+    margin-right: 13px;
 }
 /* !==============================================WHY_US_SECTION_STYLE================================================================= */
-.selection-container{
-    background-color: #f9f9f9;
-    padding: 140px 0px;
-}
 .selection-title hr{
     width: 10%;
     height: 4px;
-    background-color: #2476a5;
     border: 0;
     margin:10px  0 50px;
 }
 .reasons{
     width: 70%;
-    float: left;
     margin: 20px 2% 0px 0px;
 }
 .reasons-first-p{
@@ -359,15 +355,10 @@
 .reasons-other-p{
     margin-bottom: 15px;
 }
-.reasons i{
-    margin-right: 5px;
-}
 .selection-img {
-    float: left;
     width:28%;
 }
 .selection-img img{
-    width: 100%;
     height: 500px;
     background-color: #c8d2da;
     margin-top: 15px;
@@ -377,30 +368,17 @@
     width: 74px;
     margin: 8px auto 0 ;
 }
-.slid_bar i{
-    margin-right: 5px;
-}
 .slid_bar_cir{
     color: gray;
 }
 /* !==============================================ACHIEVEMENTS_SECTION_STYLE================================================================= */
-.achievements-parent{
-    padding: 110px 0px 55px;
-}
 .achievement{
     width: 24%;
-}
-.achievement-2{
-    margin: 0px 1.2% ;
 }
 .achievement i{
     margin-bottom: 10px;
 }
 /* !==============================================PRICE_SECTION_STYLE================================================================= */
-.price-container{
-    background-color: #f9f9f9;
-    padding: 100px 0 ;
-}
 .price-plan{    
     padding: 40px 0px;
 }
@@ -408,20 +386,18 @@
     font-size: 40px;
     margin-bottom: 30px;
     color: #152a51;
-    transition: 1s;
 }
 .plan-details{
     margin-top: 35px;
 }
 .period{
     width: 160px;
-    margin: auto;
+    margin: auto;/*auto*/
     height: 160px;
     padding-top: 26px;
     color: #152a51;
     border-radius: 50%;
     border: 1px solid #000;
-    transition: 1s;
 }
 .period .price{
     font: 800 38px "Poppins";
@@ -432,7 +408,6 @@
 }
 .price-plan button{
     border: 0;
-    background-color: #2476a5;
     margin-top: 35px;
     width: 130px;
     padding: 6px 15px;
@@ -445,7 +420,6 @@
     padding: 85px 0px 0px;
 }
 .Advantage{
-    float: left;
     width: 45%;
 }
 .adv-2{
@@ -453,9 +427,8 @@
 }
 .Advantage img{
     width: 80px;
-    background-color: #2476a5;
     padding: 5px;
-    border-radius: 50%;
+    border-radius: 50%;/*50%*/
     margin-right: 10px;
 }
 .advantage-content h3{
@@ -463,45 +436,30 @@
 }
 .advantage-content span{
     color: #f2f2f3;
-    font-size: 20px;
 }
 .Advantage p{
     margin: 20px 0 0 25px;
 }
 /* !==============================================TEAM_SECTION_STYLE================================================================= */
-.team-container{
-    padding: 100px 0px ;
-}
 .team-member{
     padding: 40px 20px 30px;
-    background-color: #f9f9f9;
 }
 .team-img-content img{
-    width: 100%;
     height:250px;
 }
 .team-member h3{
     margin: 25px 0px 15px;
-    transition: 0.5s;
 }
 .team-member p{
     margin-bottom: 10px;
-    transition: 0.5s;
 }
 .member-links a {
     display: block;
-    height: 50px;
-    width: 50px;  
-    background-color: #1934a2;
     margin-left:auto ;
 }
-.member-links a i{
-    line-height: 50px;
-}
 .team-img-content{
-    position: relative;
     width: 90%;
-    margin: auto;
+    margin: auto;/*auto*/
 }
 .team-member::after{
     background-color: rgba(0,0,0,0.1);
@@ -536,10 +494,6 @@
 .news-card h3{
     margin-bottom: 10px;
 }
-.news-card p{
-    font-size: 20px;
-    margin-bottom: 18px;
-}
 .news-card::after{
     background-color: rgba(52, 110, 144, 0.1);
 }
@@ -547,21 +501,13 @@
 .footer-container{
     height: 45vh;
     background-color:#010d24 ;
-    position: relative;
 }
 .website-logo a img {
     width: 100px;
 }
-.footer-links a{
-    height: 50px;
-    width: 50px;  
+.footer-links a{ 
     border-radius: 50%;
-    background-color: #1934a2;
     margin: 5px 6px 20px 0px;
-    transition: 0.5s;
-}
-.footer-links a i{
-    line-height: 50px;
 }
 .footer-links a:hover{
     background-color: #0f2479;
