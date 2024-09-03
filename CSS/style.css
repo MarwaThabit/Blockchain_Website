@@ -157,7 +157,7 @@
 }
 
 /** ===Selectors That Have Same Font Sizes ===  */
-.feature-box i, .offer i,.selection-title h2 ,.achievement i{
+.feature-box i,.selection-title h2 ,.achievement i{
     font-size: 50px;
 }
 .slid_bar_cir,.slid_bar_opt1{
@@ -167,10 +167,10 @@
 .post-info-content .post-page-link,.reasons-first-p,.achievement p,.member-links a i,.footer-links a i{
     font-size: 25px;
 }
-.home-parent p ,.footer-parent p,.offer p,.reasons-other-p,.Advantage p{
+.home-parent p ,.footer-parent p,.reasons-other-p,.Advantage p{
     font-size: 22px;
 }
-.feature-box p,.post-info-newLayer .icon i,.advantage-content span,.news-card p{
+.feature-box p,.offer p,.post-info-newLayer .icon i,.advantage-content span,.news-card p{
     font-size: 20px;
 }
 .feature-box h3,.post-info-content p,.achievement-number{
@@ -327,16 +327,18 @@
 /* !==============================================OFFERS_SECTION_STYLE================================================================= */
 .offer{
     margin-bottom: 50px;
-    padding: 35px 15px 35px  ;
+    padding: 35px 10px 35px 15px  ;
 }
 .offer h3{
     margin-bottom: 15px;
+    font-size: 30px;
 }
 .offer div{
     width: 80%;
 }
 .offer i{
     margin-right: 13px;
+    font-size: 45px;
 }
 /* !==============================================WHY_US_SECTION_STYLE================================================================= */
 .selection-title hr{
