@@ -63,15 +63,14 @@
 }
 
 /**                             === Positions & Floating===                 **/
-
 .header-links,.header-first-link,.news-title,.home-container,.footer-container,.team-img-content{
     position: relative;
 }
 .header-logo,.offer div,.offer i,.reasons,.selection-img,.Advantage{
     float: left;
 }
-/**  === Selectors That Have Same Base Style && Transition Effect ===  */
 
+/**  === Selectors That Have Same Base Style && Transition Effect ===  */
 .team-parent,.news-parent{
     width: 80%;
     margin:0px  auto;
@@ -105,7 +104,6 @@
 }
 
 /**  === Selectors That Have Same Hover Effect && Visibility && Display === */
-
 .feature-box:hover::after, .offer:hover::after,.team-member:hover::after,.news-card:hover::after,.price-plan:hover::after {
     width: 100%;
     height: 100%;
@@ -127,7 +125,6 @@
 }
 
 /** === Selectors That Have Same Background Color & Same Color ===  */
-
 .post-info-newLayer, .home-overlay, .team-overlay-img ,.achievements-overlay , .Advantage-overlay {
     background-color: rgba(0, 0, 0, 0.6);
 }
@@ -155,9 +152,11 @@
 .member-links a i , .footer-links a i {
     color: white;
 }
+.price-container,.team-member,.selection-container{
+    background-color: #f9f9f9;
+}
 
 /** ===Selectors That Have Same Font Sizes ===  */
-
 .feature-box i, .offer i,.selection-title h2 ,.achievement i{
     font-size: 50px;
 }
@@ -177,6 +176,8 @@
 .feature-box h3,.post-info-content p,.achievement-number{
     font-size: 35px;
 }
+
+/** ===Selectors That Have Same Width & Height & Margin & Padding & Line-height ===  */
 .member-links a i,.footer-links a i{
     line-height: 50px;
 }
@@ -196,9 +197,6 @@
 }
 .future-posts-container,.offers-container,.achievements-parent,.price-container,.team-container,.selection-container{
     padding: 125px 0 90px;
-}
-.price-container,.team-member,.selection-container{
-    background-color: #f9f9f9;
 }
 /* !==============================================HEADER_SECTION_STYLE================================================================= */
 .header{
@@ -392,7 +390,7 @@
 }
 .period{
     width: 160px;
-    margin: auto;/*auto*/
+    margin: auto;
     height: 160px;
     padding-top: 26px;
     color: #152a51;
@@ -428,7 +426,7 @@
 .Advantage img{
     width: 80px;
     padding: 5px;
-    border-radius: 50%;/*50%*/
+    border-radius: 50%;
     margin-right: 10px;
 }
 .advantage-content h3{
@@ -459,7 +457,7 @@
 }
 .team-img-content{
     width: 90%;
-    margin: auto;/*auto*/
+    margin: auto;
 }
 .team-member::after{
     background-color: rgba(0,0,0,0.1);
